@@ -14,6 +14,7 @@ h1 {
     width: 300px;
     padding: 20px;
     border-radius: 25px;
-    align: center;
-    /* margin: auto; */
+    /* "align" setting recommended by course is not valid */
+    /* align: center; */
+    margin: auto;
 }

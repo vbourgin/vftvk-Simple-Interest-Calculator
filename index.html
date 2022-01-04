@@ -9,16 +9,13 @@
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
 
-            Amount <input type="number"  id="principal">  
-            
-            <br/>
+            Amount <input type="number"  id="principal"> <br>
             
             Rate <input type="range" id="rate" min=1.0 max=20.0 value=10.25 step=0.25 onchange="updateRate()">
             <span id="rate_val">
                 10.25%
             </span>
-            
-            <br/>
+            <br>
             
             No. of Years 
             <select id="years">
@@ -32,20 +29,13 @@
                 <option value="8">8</option>
                 <option value="9">9</option>
                 <option value="10">10</option>
-            </select>  
+            </select><br><br>
             
-            <br/>
+            <!-- Add a button to compute the interest -->
+            <button onclick="compute()">Compute Interest</button><br>
             
-            Interest : <span id="result"></span>
-            
-            <br>
-
-            <button onclick="compute()">Compute Interest</button>
-            
-            <br>
-            
-            <span id="result">
-            </span>
+            <!-- Add placeholder for the computed interest, which is filled by javascript code -->
+            <span id="result"></span><br>
 
             <footer>
 
